@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Windig</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+        <style>
+      @font-face {
+        font-family: "Quicksand";
+        src: url("fonts/Quicksand-Regular.ttf");
+      }
+      body {
+        font-family: "Quicksand", sans-serif;
+        font-style: normal;
+        background-color: #1A110F; /* appainter.dev, dark, neutral colors, surface */
+        color: #FF5722; /* seedColor: Colors.deepOrange */
+      }
+      .centered {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centered">
+      <img alt="Windig logo" src="icon.gif" width="128px"/>
+      <h1>Windig</h1>
+    </div>
+    <!--
+    Usage:
+      - Supports the following system locale languages: en (fallback), de
+      - Saving an empty key removes it from the persistent storage.
+      - Disabling/Enabling network requires an explicit "Refresh" to take effect.
+    -->
+  </body>
+</html>
