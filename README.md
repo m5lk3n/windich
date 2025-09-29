@@ -7,6 +7,7 @@ Your companion for outdoor activities, providing real-time wind direction and sp
 ## Documentation
 
 - [Bookmarks](docs/BOOKMARKS.md)
+- [Development](docs/DEV.md)
 - [How-to](docs/HOWTO.md)
 - [To-do](docs/TODO.md)
 
