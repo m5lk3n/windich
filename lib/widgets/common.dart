@@ -104,7 +104,7 @@ class Logo extends StatelessWidget {
       onTap: () {
         browseTo(Url.dev);
       },
-      child: Image.asset('assets/images/logo.png', height: Style.bigSpace),
+      child: Image.asset('assets/logo/logo.png', height: Style.bigSpace),
     );
   }
 }

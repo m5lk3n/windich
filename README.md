@@ -1,6 +1,6 @@
 # Windig
 
-![](assets/animate/icon.gif)
+![](assets/icon/icon-small.png)
 
 Your companion for outdoor activities, providing real-time wind direction and speed using your device's sensors and geolocation. An app for Android. For now.
 

@@ -87,9 +87,10 @@ icons:
 build-website:
 	@echo "(Re-)Building website to ${WEBSITE_BUILD_DIR} ..."
 	rm -rf ${WEBSITE_BUILD_DIR}
-	mkdir -p ${WEBSITE_BUILD_DIR}
+	mkdir -p ${WEBSITE_BUILD_DIR}/fonts
 	cp android/app/src/main/res/mipmap-hdpi/ic_launcher.png ${WEBSITE_BUILD_DIR}/favicon.png
 	cp assets/icon/icon-small.png ${WEBSITE_BUILD_DIR}
+	cp -R assets/fonts/* ${WEBSITE_BUILD_DIR}/fonts
 	cp -R ${WEBSITE_SRC_DIR}/* ${WEBSITE_BUILD_DIR}
 	@echo "... built."
 

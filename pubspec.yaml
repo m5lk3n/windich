@@ -1,10 +1,10 @@
 name: windig
-description: "Your little companion for outdoor activities, providing real-time weather info for your location."
+description: "Your little companion app for outdoor activities, providing real-time weather info for your location."
 homepage: https://windig.lttl.dev
 repository: https://github.com/m5lk3n/windig
 publish_to: 'none'
 
-version: 0.0.6+1
+version: 0.1.0+1
 
 environment:
   sdk: ^3.9.0
@@ -23,7 +23,7 @@ dependencies:
   flutter_speed_dial: ^7.0.0
   flutter_secure_storage: ^9.2.4
   geolocator: ^14.0.1
-  google_fonts: ^6.3.1
+  google_fonts: ^6.3.2
   http: ^1.5.0
   intl: ^0.20.2
   logging: ^1.3.0
@@ -45,6 +45,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/fonts/
     - .env
     - assets/icon/icon.png
     - assets/icon/icon-small.png

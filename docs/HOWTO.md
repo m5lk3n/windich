@@ -10,7 +10,7 @@ Run `make strip-exif` to remove.
 <summary>... check that an image does not contain any EXIF data</summary>
 
 ```
-$ exif --no-fixup assets/images/logo.png
+$ exif --no-fixup assets/logo/logo.png
 Corrupt data
 The data provided does not follow the specification.
 ExifLoader: The data supplied does not seem to contain EXIF data.
