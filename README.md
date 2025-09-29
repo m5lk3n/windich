@@ -25,5 +25,5 @@ I used
 ---
 
 <p align="center">
-    <a href="https://lttl.dev/"><img alt="lttl.dev logo" src="./assets/logos/logo-lttl_dev.png" width="33%"/></a>
+    <a href="https://lttl.dev/"><img alt="lttl.dev logo" src="assets/logo/logo.png" width="33%"/></a>
 </p>
