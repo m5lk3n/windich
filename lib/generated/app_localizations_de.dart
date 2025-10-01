@@ -109,6 +109,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get refresh => 'Aktualisieren';
 
   @override
+  String get info => 'Info';
+
+  @override
   String get language => 'Sprache';
 
   @override
@@ -130,7 +133,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get ok => 'OK';
 
   @override
-  String get enterKey => 'API Schlüssel eingeben';
+  String get enterKey => 'Schlüssel eingeben';
 
   @override
   String get cancel => 'Abbrechen';
@@ -146,8 +149,17 @@ class AppLocalizationsDe extends AppLocalizations {
       'Schlüssel gelöscht. Die App funkioniert nicht ohne Schlüssel!';
 
   @override
+  String get keyUrl => 'https://windig.lttl.dev/#/de/?id=key';
+
+  @override
   String get disclaimer => 'Haftungsausschluss';
 
   @override
+  String get disclaimerUrl => 'https://windig.lttl.dev/#/de/?id=disclaimer';
+
+  @override
   String get privacyPolicy => 'Datenschutzbestimmungen';
+
+  @override
+  String get privacyPolicyUrl => 'https://windig.lttl.dev/#/de/?id=privacy';
 }

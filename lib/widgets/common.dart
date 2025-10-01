@@ -26,7 +26,6 @@ class AppIconSmall extends StatelessWidget {
 
 Future<void> showWindigAboutDialog(BuildContext context) async {
   final localizations = AppLocalizations.of(context);
-  final language = Localizations.localeOf(context).languageCode;
 
   final aboutDialog = AboutDialog(
     applicationName: Common.appName,
@@ -46,7 +45,7 @@ Future<void> showWindigAboutDialog(BuildContext context) async {
       Wrap(
         children: [
           TextButton(
-            onPressed: () => browseTo('${Url.disclaimer}_$language'),
+            onPressed: () => browseTo(localizations?.disclaimerUrl ?? ''),
             child: Text(
               localizations?.disclaimer ?? '',
               style: Theme.of(context).textTheme.bodyMedium!.copyWith(
@@ -57,7 +56,7 @@ Future<void> showWindigAboutDialog(BuildContext context) async {
             ),
           ),
           TextButton(
-            onPressed: () => browseTo('${Url.privacy}_$language'),
+            onPressed: () => browseTo(localizations?.privacyPolicyUrl ?? ''),
             child: Text(
               localizations?.privacyPolicy ?? '',
               style: Theme.of(context).textTheme.bodyMedium!.copyWith(

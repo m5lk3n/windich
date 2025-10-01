@@ -1,40 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windig</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-        <style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css" />
+    <style>
+      .cover {
+        background: #111418 !important;
+      }
+      .anchor span, h1, h1 small {
+        color: #2196F3;
+      }
       @font-face {
         font-family: "Quicksand";
-        src: url("fonts/Quicksand-Regular.ttf");
+        src: url("_fonts/Quicksand-Regular.ttf");
       }
       body {
         font-family: "Quicksand", sans-serif;
         font-style: normal;
-        background-color: #111418; /* appainter.dev, dark, neutral colors, surface */
-        color: #2196F3; /* seedColor: Colors.blue */
+        background-color: #121212;
+        color: #e0e0e0;
       }
-      .centered {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        position: fixed;
-        align-items: center;
-        justify-content: center;
+      .sidebar {
+        background-color: #1f1f1f;
+      }
+      .sidebar .sidebar-header {
+        color: #f2f2f2;
+      }
+      .sidebar a {
+        color: #cfcfcf;
+      }
+      .sidebar a:hover {
+        color: #ff9800;
+      }
+      .content {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+      .markdown-section a {
+        text-decoration: none;
+      }
+      .markdown-section a:hover {
+        text-decoration: underline;
       }
     </style>
+    <!--script src="https://cdn.jsdelivr.net/npm/docsify-plugin-i18n@1.0.4/dist/docsify-i18n.min.js"></script-->
   </head>
   <body>
-    <div class="centered">
-      <img alt="Windig logo" src="icon-small.png"/>&nbsp;
-      <h1>Windig</h1>
-    </div>
-    <!--
-    Usage:
-      - Supports the following system locale languages: en (fallback), de
-      - Saving an empty key removes it from the persistent storage.
-      - Disabling/Enabling network requires an explicit "Refresh" to take effect.
-    -->
+    <div id="app">...</div>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+    <script>
+      window.$docsify = {
+        name: 'Windig',
+        logo: '/icon-small.png',
+        repo: 'm5lk3n/windig',
+        themeColor: '#ff9800',
+        loadSidebar: false,
+        loadNavbar: true,
+        darkmode: true,
+        coverpage: true,
+        alias: {
+          '/.*/_navbar.md': '/_navbar.md',
+          '/en/': '/',
+        }
+      };
+    </script>
   </body>
 </html>

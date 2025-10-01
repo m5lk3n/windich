@@ -1,4 +1,4 @@
-WEBSITE_BUILD_DIR = website/.build
+WEBSITE_BUILD_DIR = website/dist
 WEBSITE_SRC_DIR = website/src
 
 ## help: print this help message
@@ -21,6 +21,20 @@ needs-python:
 needs-exif:
 	@if ! command -v exif >/dev/null 2>&1; then \
 		echo "exif is required but it's not installed. Aborting."; \
+		exit 1; \
+	fi
+
+.PHONY: needs-magick
+needs-magick:
+	@if ! command -v magick >/dev/null 2>&1; then \
+		echo "ImageMagick (magick) is required but it's not installed. Aborting."; \
+		exit 1; \
+	fi
+
+.PHONY: needs-yq
+needs-yq:
+	@if ! command -v yq >/dev/null 2>&1; then \
+		echo "yq is required but it's not installed. Aborting."; \
 		exit 1; \
 	fi
 
@@ -84,14 +98,16 @@ icons:
 
 ## build-website: build the website locally
 .PHONY: build-website
-build-website:
+build-website: needs-magick needs-yq
 	@echo "(Re-)Building website to ${WEBSITE_BUILD_DIR} ..."
 	rm -rf ${WEBSITE_BUILD_DIR}
-	mkdir -p ${WEBSITE_BUILD_DIR}/fonts
-	cp android/app/src/main/res/mipmap-hdpi/ic_launcher.png ${WEBSITE_BUILD_DIR}/favicon.png
+	mkdir -p ${WEBSITE_BUILD_DIR}/_fonts
+	magick android/app/src/main/res/mipmap-hdpi/ic_launcher.png -define icon:auto-resize=256,128,96,64,48,32,24,16 ${WEBSITE_BUILD_DIR}/favicon.ico
 	cp assets/icon/icon-small.png ${WEBSITE_BUILD_DIR}
-	cp -R assets/fonts/* ${WEBSITE_BUILD_DIR}/fonts
-	cp -R ${WEBSITE_SRC_DIR}/* ${WEBSITE_BUILD_DIR}
+	cp assets/logo/logo-small.png ${WEBSITE_BUILD_DIR}
+	cp -R assets/fonts/* ${WEBSITE_BUILD_DIR}/_fonts
+	rsync -av --exclude='.DS_Store' --exclude='*.template' ${WEBSITE_SRC_DIR}/* ${WEBSITE_BUILD_DIR}/
+	(echo 'changecom' && cat ${WEBSITE_SRC_DIR}/_coverpage.md.template) | m4 -D __VERSION__="$(shell yq '.version' pubspec.yaml)" > ${WEBSITE_BUILD_DIR}/_coverpage.md
 	@echo "... built."
 
 ## serve-website: build and serve the website locally
@@ -100,7 +116,13 @@ serve-website: needs-python build-website
 	@echo "Serving website from ${WEBSITE_BUILD_DIR} ..."
 	python3 -m http.server 8080 --bind 127.0.0.1 -d ${WEBSITE_BUILD_DIR}
 
-# deploy-website: deploy the website to TODO
+## deploy-website: deploy the website online
+.PHONY: deploy-website
+deploy-website: build-website
+	@echo "Deploying website online ..."
+	source .env
+	scp -r ${WEBSITE_BUILD_DIR}/* ${WEBSITE_DEPLOY_TARGET}
+	@echo "... deployed."
 
 ## strip-exif: remove all EXIF metadata from images in this repo
 .PHONY: strip-exif

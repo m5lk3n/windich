@@ -108,6 +108,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get refresh => 'Refresh';
 
   @override
+  String get info => 'Info';
+
+  @override
   String get language => 'Language';
 
   @override
@@ -129,7 +132,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get ok => 'OK';
 
   @override
-  String get enterKey => 'Enter an API key';
+  String get enterKey => 'Enter a key';
 
   @override
   String get cancel => 'Cancel';
@@ -144,8 +147,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get keyRemoved => 'Key removed. The app won\'t work without a key!';
 
   @override
+  String get keyUrl => 'https://windig.lttl.dev/#/en/?id=key';
+
+  @override
   String get disclaimer => 'Disclaimer';
 
   @override
+  String get disclaimerUrl => 'https://windig.lttl.dev/#/en/?id=disclaimer';
+
+  @override
   String get privacyPolicy => 'Privacy Policy';
+
+  @override
+  String get privacyPolicyUrl => 'https://windig.lttl.dev/#/en/?id=policy';
 }

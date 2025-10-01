@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:windig/common.dart';
 import 'package:windig/extensions/string.dart';
 import 'package:windig/generated/app_localizations.dart';
 import 'package:windig/helper.dart';
@@ -9,7 +8,6 @@ import 'package:windig/providers/secure_storage_provider.dart';
 
 Future<void> showKeyInputDialog(BuildContext context, WidgetRef ref) async {
   final localizations = AppLocalizations.of(context);
-  final language = Localizations.localeOf(context).languageCode;
 
   bool isObscured = true;
   final keyController = TextEditingController();
@@ -36,9 +34,9 @@ Future<void> showKeyInputDialog(BuildContext context, WidgetRef ref) async {
                     IconButton(
                       visualDensity: VisualDensity.compact,
                       constraints: BoxConstraints(),
-                      icon: Icon(Icons.info_outline), //.question_mark),
+                      icon: Icon(Icons.question_mark),
                       onPressed: () {
-                        browseTo("${Url.key}_$language");
+                        browseTo(localizations?.keyUrl ?? '');
                       },
                     ),
                     IconButton(

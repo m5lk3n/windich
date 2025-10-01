@@ -2,12 +2,13 @@
 
 ![](assets/icon/icon-small.png)
 
-Your companion for outdoor activities, providing real-time wind direction and speed using your device's sensors and geolocation. An app for Android. For now.
+Your companion for outdoor activities, providing real-time weather information like wind direction and speed using your device's sensors and geolocation. An app for Android. For now.
 
 ## Documentation
 
 - [Bookmarks](docs/BOOKMARKS.md)
 - [Development](docs/DEV.md)
+- [FAQ](docs/FAQ.md)
 - [How-to](docs/HOWTO.md)
 - [To-do](docs/TODO.md)
 

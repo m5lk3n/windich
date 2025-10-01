@@ -12,6 +12,7 @@ import 'package:http/http.dart' as http;
 
 import 'package:windig/common.dart';
 import 'package:windig/generated/app_localizations.dart';
+import 'package:windig/helper.dart';
 import 'package:windig/log.dart';
 import 'package:windig/models/common.dart';
 import 'package:windig/providers/secure_storage_provider.dart';
@@ -281,6 +282,12 @@ class _WeatherInfoScreenState extends ConsumerState<WeatherInfoScreen> {
           label: localizations?.theme ?? '',
           labelStyle: TextStyle(fontSize: 18.0),
           onTap: () => toggleTheme(context),
+        ),
+        SpeedDialChild(
+          child: Icon(Icons.help_outlined),
+          label: localizations?.info ?? '',
+          labelStyle: TextStyle(fontSize: 18.0),
+          onTap: () => browseTo(Url.web),
         ),
         SpeedDialChild(
           child: Icon(Icons.refresh),

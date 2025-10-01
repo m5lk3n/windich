@@ -25,9 +25,5 @@ abstract class Style {
 
 abstract class Url {
   static const String dev = 'https://lttl.dev';
-  static const String key = 'https://windig.lttl.dev#key';
-  static const String privacy =
-      'https://windig.lttl.dev/privacy'; // followed by _<lang>
-  static const String disclaimer =
-      'https://windig.lttl.dev/disclaimer'; // followed by _<lang>
+  static const String web = 'https://windig.lttl.dev/';
 }

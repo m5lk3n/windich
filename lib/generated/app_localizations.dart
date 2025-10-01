@@ -260,6 +260,12 @@ abstract class AppLocalizations {
   /// **'Refresh'**
   String get refresh;
 
+  /// No description provided for @info.
+  ///
+  /// In en, this message translates to:
+  /// **'Info'**
+  String get info;
+
   /// No description provided for @language.
   ///
   /// In en, this message translates to:
@@ -299,7 +305,7 @@ abstract class AppLocalizations {
   /// No description provided for @enterKey.
   ///
   /// In en, this message translates to:
-  /// **'Enter an API key'**
+  /// **'Enter a key'**
   String get enterKey;
 
   /// No description provided for @cancel.
@@ -326,17 +332,35 @@ abstract class AppLocalizations {
   /// **'Key removed. The app won\'t work without a key!'**
   String get keyRemoved;
 
+  /// No description provided for @keyUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'https://windig.lttl.dev/#/en/?id=key'**
+  String get keyUrl;
+
   /// No description provided for @disclaimer.
   ///
   /// In en, this message translates to:
   /// **'Disclaimer'**
   String get disclaimer;
 
+  /// No description provided for @disclaimerUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'https://windig.lttl.dev/#/en/?id=disclaimer'**
+  String get disclaimerUrl;
+
   /// No description provided for @privacyPolicy.
   ///
   /// In en, this message translates to:
   /// **'Privacy Policy'**
   String get privacyPolicy;
+
+  /// No description provided for @privacyPolicyUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'https://windig.lttl.dev/#/en/?id=policy'**
+  String get privacyPolicyUrl;
 }
 
 class _AppLocalizationsDelegate

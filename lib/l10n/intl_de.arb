@@ -27,6 +27,7 @@
   "key": "Schlüssel",
   "theme": "Design",
   "refresh": "Aktualisieren",
+  "info": "Info",
   "language": "Sprache",
 
   "problem": "Problem",
@@ -35,12 +36,15 @@
   "locationPermissionDeniedForever": "Benötigter Standortzugriff wurde permanent verweigert. Dieser kann nicht erneut durch die App angefragt werden.\n\nBitte Standortzugriff für diese App in den Systemeinstellungen gewähren.",
   "ok": "OK",
 
-  "enterKey": "API Schlüssel eingeben",
+  "enterKey": "Schlüssel eingeben",
   "cancel": "Abbrechen",
   "save": "Speichern",
   "keySaved": "Schlüssel gespeichert.",
   "keyRemoved": "Schlüssel gelöscht. Die App funkioniert nicht ohne Schlüssel!",
 
+  "keyUrl": "https://windig.lttl.dev/#/de/?id=schlüssel",
   "disclaimer": "Haftungsausschluss",
-  "privacyPolicy": "Datenschutzbestimmungen"
+  "disclaimerUrl": "https://windig.lttl.dev/#/de/?id=haftungsausschluss",
+  "privacyPolicy": "Datenschutzbestimmungen",
+  "privacyPolicyUrl": "https://windig.lttl.dev/#/de/?id=datenschutzbestimmungen"
 }
