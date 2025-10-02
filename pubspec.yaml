@@ -4,7 +4,7 @@ homepage: https://windig.lttl.dev
 repository: https://github.com/m5lk3n/windig
 publish_to: 'none'
 
-version: 0.1.0+3
+version: 0.1.0+4
 
 environment:
   sdk: ^3.9.0

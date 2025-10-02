@@ -1,6 +1,6 @@
 # Windig
 
-*Blown by the wind.*
+*It's "windich" (windy).*
 
 ## Features
 

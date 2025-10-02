@@ -107,7 +107,10 @@ build-website: needs-magick needs-yq
 	cp assets/logo/logo-small.png ${WEBSITE_BUILD_DIR}
 	cp -R assets/fonts/* ${WEBSITE_BUILD_DIR}/_fonts
 	rsync -av --exclude='.DS_Store' --exclude='*.template' ${WEBSITE_SRC_DIR}/* ${WEBSITE_BUILD_DIR}/
-	(echo 'changecom' && cat ${WEBSITE_SRC_DIR}/_coverpage.md.template) | m4 -D __VERSION__="$(shell yq '.version' pubspec.yaml)" > ${WEBSITE_BUILD_DIR}/_coverpage.md
+	# replace __VERSION__ in templates
+	VERSION=$(shell yq '.version' pubspec.yaml) && \
+	(echo 'changecom' && cat ${WEBSITE_SRC_DIR}/_coverpage.md.template) | m4 -D __VERSION__="v$$VERSION" > ${WEBSITE_BUILD_DIR}/_coverpage.md && \
+	(echo 'changecom' && cat ${WEBSITE_SRC_DIR}/index.html.template) | m4 -D __VERSION__="$$VERSION" > ${WEBSITE_BUILD_DIR}/index.html
 	@echo "... built."
 
 ## serve-website: build and serve the website locally
