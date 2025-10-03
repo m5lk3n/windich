@@ -2,7 +2,7 @@
 
 *It's "windich" (windy).*
 
-A smartphone app to display your current location's weather now and with a 3h forecast. It comes with a wind compass and a compass. That's it.
+A smartphone app to display your current location's weather now and with a 3h forecast. It comes with a wind compass and a compass (esp. handy when the GPS tells you to "go southeast" :wink:). That's it.
 
 ## Features
 
@@ -16,7 +16,9 @@ A smartphone app to display your current location's weather now and with a 3h fo
   - :de:
 
   The language cannot be changed in the app itself. 
-- **Themes**: Both dark and light themes are supported. The app remembers your last selected theme.
+- **Themes**: Both dark and light themes are supported.
+
+  The app remembers your last selected theme.
 
 ## Screens
 
