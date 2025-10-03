@@ -2,13 +2,13 @@
 
 *It's "windich" (windy).*
 
-A smartphone app to display your current location's weather now and with a 3h forecast. It comes with a wind compass and a compass (esp. handy when the GPS tells you to "go southeast" :wink:). That's it.
+A smartphone app to display your current location's weather now and with a 3h forecast. It comes with a wind compass and a compass (esp. handy when the GPS tells you to "head southeast" :wink:). That's it.
 
 ## Features
 
 - **OS**: So far, only Android is supported.
 - **Weather**: Uses [OpenWeather](https://openweathermap.org/api) API.
-- **Secure Storage**: Stores the [API key](#key) securely on the device only.
+- **Secure Storage**: Stores the [API key](#key) encrypted on the local device only.
 - **Languages**: The app language follows the device language as per system settings.
   
   The following languages are supported:

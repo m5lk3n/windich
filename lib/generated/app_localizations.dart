@@ -101,7 +101,7 @@ abstract class AppLocalizations {
   /// No description provided for @motto.
   ///
   /// In en, this message translates to:
-  /// **'Blown by the wind'**
+  /// **'It is \"windich\" (windy).'**
   String get motto;
 
   /// No description provided for @loading.
