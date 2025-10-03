@@ -116,6 +116,12 @@ abstract class AppLocalizations {
   /// **'n/a'**
   String get na;
 
+  /// No description provided for @noKey.
+  ///
+  /// In en, this message translates to:
+  /// **'A key is needed for the app to work. Please choose \"Key\" from the menu.'**
+  String get noKey;
+
   /// No description provided for @currentWindSpeed.
   ///
   /// In en, this message translates to:

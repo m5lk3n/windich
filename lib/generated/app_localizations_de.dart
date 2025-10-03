@@ -18,6 +18,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get na => 'nicht verfügbar';
 
   @override
+  String get noKey =>
+      'Ein Schlüssel wird benötigt, damit die App funktioniert. Bitte wähle \"Schlüssel\" im Menü.';
+
+  @override
   String currentWindSpeed(Object currentWindSpeed) {
     return 'Aktuelle Windgeschwindigkeit: $currentWindSpeed';
   }

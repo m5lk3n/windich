@@ -8,7 +8,7 @@ Eine Smartphone-App, die das aktuelle Wetter an deinem Standort sowie eine 3-Stu
 
 - **Betriebssystem**: Bisher wird nur Android unterstützt.
 - **Wetter**: Nutzt die [OpenWeather](https://openweathermap.org/api) API.
-- **Sichere Speicherung**: Der [API-Schlüssel](#schluessel) wird ausschließlich verschlüsselt lokal auf dem Gerät gespeichert.
+- **Sichere Speicherung**: Der [API-Schlüssel](#schlüssel) wird ausschließlich verschlüsselt lokal auf dem Gerät gespeichert.
 - **Sprachen**: Die App-Sprache richtet sich nach den Systemeinstellungen des Geräts.
 
     Unterstützte Sprachen:

@@ -3,6 +3,7 @@
 
   "loading": "Loading...",
   "na": "n/a",
+  "noKey": "A key is needed for the app to work. Please choose \"Key\" from the menu.",
   "currentWindSpeed": "Current Wind Speed: {currentWindSpeed}",
   "forecastWindSpeed": "3h Wind Speed: {forecastWindSpeed}",
   "currentWindDirection": "Current Wind Direction: {currentWindDirection}",

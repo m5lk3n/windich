@@ -28,6 +28,7 @@ class WeatherInfoScreen extends ConsumerStatefulWidget {
 }
 
 class _WeatherInfoScreenState extends ConsumerState<WeatherInfoScreen> {
+  bool noKeyNotified = false;
   String? owmKey;
   String? loading;
   String? na;
@@ -87,17 +88,23 @@ class _WeatherInfoScreenState extends ConsumerState<WeatherInfoScreen> {
 
   void setLoadingState() {
     _setState(loading!);
+    setLastUpdatedNow();
   }
 
   void setNotAvailableState() {
     _setState(na!);
+    setLastUpdatedNow();
+  }
+
+  void setLastUpdatedNow() {
+    lastUpdated = DateTime.now().toLocal().toString().split('.')[0];
   }
 
   void updateWeatherInfo(BuildContext context) {
     setLoadingState();
     fetchCurrentWeatherInfo();
     fetchForecastWeatherInfo();
-    lastUpdated = DateTime.now().toLocal().toString().split('.')[0];
+    setLastUpdatedNow();
   }
 
   Future<void> fetchCurrentWeatherInfo() async {
@@ -328,6 +335,20 @@ class _WeatherInfoScreenState extends ConsumerState<WeatherInfoScreen> {
     if (owmKey != key && key.isNotEmpty) {
       owmKey = key;
       updateWeatherInfo(context);
+    } else if (!noKeyNotified && key.isEmpty) {
+      noKeyNotified = true;
+      owmKey = '';
+      setNotAvailableState();
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        final ScaffoldMessengerState scaffold = ScaffoldMessenger.of(context);
+        scaffold.showSnackBar(
+          SnackBar(
+            content: Text(localizations?.noKey ?? ''),
+            backgroundColor: Theme.of(context).colorScheme.error,
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
+      });
     }
 
     return Scaffold(

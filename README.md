@@ -12,6 +12,13 @@ Your companion for outdoor activities, providing real-time weather information l
 - [How-to](docs/HOWTO.md)
 - [To-do](docs/TODO.md)
 
+## Goals
+
+- Have a compass and a wind compass at hand.
+- Learn Flutter/Dart.
+- Learn Flutter/Dart i18n.
+- Explore Copilot and ChatGPT for Flutter app development.
+
 ## Acknowledgements
 
 - Google Fonts/Andrew Paglinawan for [Quicksand](https://fonts.google.com/specimen/Quicksand)

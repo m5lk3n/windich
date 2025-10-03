@@ -18,6 +18,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get na => 'n/a';
 
   @override
+  String get noKey =>
+      'A key is needed for the app to work. Please choose \"Key\" from the menu.';
+
+  @override
   String currentWindSpeed(Object currentWindSpeed) {
     return 'Current Wind Speed: $currentWindSpeed';
   }

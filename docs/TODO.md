@@ -1,6 +1,5 @@
 # To do
 
-- open key dialog if no key is present
 - rename to "Windich"
 - [DEV](DEV.md), describe installation
 - [README](../README.md)
