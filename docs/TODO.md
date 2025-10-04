@@ -1,7 +1,6 @@
 # To do
 
-- add lib/build to .gitignore
-- repo meta data
+- add lessons learned
 
 ## Open
 

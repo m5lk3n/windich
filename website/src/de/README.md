@@ -2,7 +2,7 @@
 
 *"Es is' windich."*
 
-Eine Smartphone-App, die das aktuelle Wetter an deinem Standort sowie eine 3-Stunden-Vorhersage anzeigt. Sie bietet einen Windkompass und einen Kompass (besonders praktisch, wenn das Navi sagt: „Gehe nach Südosten“ :wink:). Das ist auch schon alles.
+Eine Smartphone-App, die das aktuelle Wetter an deinem Standort sowie eine 3-Stunden-Vorhersage anzeigt. Sie bietet einen Windkompass und einen Kompass (besonders praktisch, wenn das Navi sagt: "Gehe nach Südosten" :wink:). Das ist auch schon alles.
 
 ## Funktionen
 
@@ -47,6 +47,26 @@ Windich verwendet OpenWeather, wofür ein API-Schlüssel benötigt wird. **Derze
 Kurz gesagt: Bitte registriere dich selbst und bringe deinen eigenen Schlüssel mit. OpenWeather API-Schlüssel werden auf [der Account-Seite](https://home.openweathermap.org/users/sign_in) verwaltet.
 
 **Die App funktioniert ohne Schlüssel nicht!**
+
+## Berechtigungen
+
+Hier findest du eine Liste der von der App benötigten Berechtigungen und deren Zweck:
+
+- Internet: Wird benötigt, um HTTPS-Anfragen an die OpenWeather APIs zu stellen.
+- Standort: Wird benötigt, um Wetterinformationen für den aktuellen Standort bereitzustellen.
+
+Beim ersten Start oder nach dem Zurücksetzen der App fragt Windich nach den Standortberechtigungen. Wenn du eine der Berechtigungen verweigerst, funktioniert die App nicht wie erwartet. Du kannst die Berechtigungen jederzeit in den Einstellungen deines Geräts ändern.
+
+Unter Android gewähre die Berechtigungen bitte nacheinander, wie folgt:
+- Zugriff auf den Standort dieses Geräts erlauben?: Wähle "Präzise" und "Nur während der Nutzung der App"
+- Standortberechtigung: "Immer erlauben"
+
+Beachte bitte:
+
+- Das nachträgliche Entziehen dieser Berechtigungen während die App läuft, führt dazu, dass die Wetteraktualisierung beim nächsten Aktualisieren fehlschlägt.
+- Das erneute Hinzufügen von Berechtigungen während Windich geöffnet ist, erfordert eine Aktualisierung.
+
+Außerdem solltest du unter Android in den "App-Informationen" → "Einstellungen für ungenutzte Apps" die Option "App verwalten, wenn sie nicht verwendet wird" deaktivieren, um ein unbeabsichtigtes Entziehen bereits erteilter Berechtigungen zu vermeiden.
 
 ## Datenschutz
 

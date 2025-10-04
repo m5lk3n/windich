@@ -48,6 +48,26 @@ Long story short, please sign up and bring your own key. OpenWeather API keys ar
 
 **The app won't work without a key!**
 
+## Permissions
+
+Here's the list of application permissions and for what they are required:
+
+- Internet: Required to make HTTPS calls to OpenWeather APIs.
+- Location: Required to provide weather info for the current location.
+
+Upon first start or app reset, Windich will ask for the permissions about location. If you deny any of the permissions, the application will not work as expected. You can always change the permissions in the settings of your device.
+
+On Android, please grant the permissions when asked, one after the other, as follows:
+- Allow Windich to access this device's location?:	Choose "Precise" and "While using the app"
+- Location permission:	"Allow all the time"
+
+Please note though, that
+
+- revoking those permissions in retrospect, while the app is running, will cause the weather information update to fail with the next refresh.
+- re-adding permissions while Windich is open requires a refresh.
+
+Last, on Android under 'App info' → 'Unused app settings', to avoid unintentional revocation of previously granted permissions, make sure to disable 'Manage app if unused'.
+
 ## Privacy
 
 Windich itself does not collect any personal data. The application does not store any data on a server. The user's (OpenWeather API) key is stored securely on the client device. The application itself does not use cookies or any other tracking technologies.

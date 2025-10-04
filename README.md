@@ -2,7 +2,7 @@
 
 ![](assets/icon/icon-small.png)
 
-Your companion for outdoor activities, providing real-time weather information like wind direction and speed using your device's sensors and geolocation. An app for Android and a pet project. For now.
+Your companion for outdoor activities, providing forecasted and real-time weather information like wind speed and wind direction using your device's sensors and geolocation. An app for Android and one of my pet projects. For now.
 
 Screenshots can be found [here](device_screens/screenshots/APP.md).
 
@@ -21,6 +21,7 @@ Screenshots can be found [here](device_screens/screenshots/APP.md).
 - Learn Flutter/Dart i18n.
 - Explore Copilot and ChatGPT for Flutter app development.
 - Try [docsify](https://docsify.js.org/).
+- Time-boxed activity to max. 6 weeks outside of work.
 
 ## Repo Structure
 
