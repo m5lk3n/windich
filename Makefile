@@ -131,8 +131,7 @@ serve-website: needs-python build-website
 .PHONY: deploy-website
 deploy-website: build-website
 	@echo "Deploying website online ..."
-	source .env
-	scp -r ${WEBSITE_BUILD_DIR}/* ${WEBSITE_DEPLOY_TARGET}
+	@export $$(cat .env | xargs) && scp -r ${WEBSITE_BUILD_DIR}/* $${WEBSITE_DEPLOY_TARGET}
 	@echo "... deployed."
 
 ## strip-exif: remove all EXIF metadata from images in this repo
