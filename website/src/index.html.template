@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windig __VERSION__</title>
+    <title>Windich __VERSION__</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css" />
     <style>
       .cover {
@@ -45,16 +45,15 @@
         text-decoration: underline;
       }
     </style>
-    <!--script src="https://cdn.jsdelivr.net/npm/docsify-plugin-i18n@1.0.4/dist/docsify-i18n.min.js"></script-->
   </head>
   <body>
     <div id="app">...</div>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
     <script>
       window.$docsify = {
-        name: 'Windig',
+        name: 'Windich',
         logo: '/icon-small.png',
-        repo: 'm5lk3n/windig',
+        repo: 'm5lk3n/windich',
         themeColor: '#ff9800',
         loadSidebar: false,
         loadNavbar: true,

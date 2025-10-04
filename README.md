@@ -1,4 +1,4 @@
-# Windig
+# Windich
 
 ![](assets/icon/icon-small.png)
 
@@ -22,11 +22,23 @@ Screenshots can be found [here](device_screens/screenshots/APP.md).
 - Explore Copilot and ChatGPT for Flutter app development.
 - Try [docsify](https://docsify.js.org/).
 
+## Repo Structure
+
+```bash
+├── android        # Flutter
+├── assets         # Windich/Flutter: app icons and images
+├── device_screens # Windich: app screenshots
+├── docs           # Windich: documentation
+├── lib            # Flutter
+├── logcat         # Windich: for logcat-specific logging
+└── website        # Windich: app supporting web page 
+```
+
 ## Get Started
 
-Here's [why](docs/FAQ.md) Windig is not available from an app store.
+Here's [why](docs/FAQ.md) Windich is not available from an app store.
 
-So, start [here](docs/DEV.md#prerequisites). Please visit the [website](https://windig.lttl.dev) for more info.
+So, start [here](docs/DEV.md#prerequisites). Please visit the [website](https://windich.lttl.dev) for more info.
 
 ## License
 

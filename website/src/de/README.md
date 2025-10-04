@@ -1,4 +1,4 @@
-# Windig
+# Windich
 
 *"Es is' windich."*
 
@@ -42,7 +42,7 @@ Das Deaktivieren/Aktivieren des Netzwerks am Gerät erfordert ein explizites "Ak
 
 ## Schlüssel
 
-Windig verwendet OpenWeather, wofür ein API-Schlüssel benötigt wird. **Derzeit ist die Nutzung der OpenWeather API nur bis zu 1000 API-Aufrufen pro Tag kostenlos!** (Bisher reichen bei 24/7-Nutzung 20 Aktualisierungen pro Stunde für die freie Nutzung.) Siehe [OpenWeather Pricing](https://openweathermap.org/price) für Details.
+Windich verwendet OpenWeather, wofür ein API-Schlüssel benötigt wird. **Derzeit ist die Nutzung der OpenWeather API nur bis zu 1000 API-Aufrufen pro Tag kostenlos!** (Bisher reichen bei 24/7-Nutzung 20 Aktualisierungen pro Stunde für die freie Nutzung.) Siehe [OpenWeather Pricing](https://openweathermap.org/price) für Details.
 
 Kurz gesagt: Bitte registriere dich selbst und bringe deinen eigenen Schlüssel mit. OpenWeather API-Schlüssel werden auf [der Account-Seite](https://home.openweathermap.org/users/sign_in) verwaltet.
 
@@ -50,13 +50,13 @@ Kurz gesagt: Bitte registriere dich selbst und bringe deinen eigenen Schlüssel 
 
 ## Datenschutz
 
-Windig selbst sammelt keine personenbezogenen Daten. Die Anwendung speichert keine Daten auf einem Server. Der (OpenWeather API-)Schlüssel des Nutzers wird sicher auf dem Gerät gespeichert. Die Anwendung verwendet keine Cookies oder andere Tracking-Technologien.
+Windich selbst sammelt keine personenbezogenen Daten. Die Anwendung speichert keine Daten auf einem Server. Der (OpenWeather API-)Schlüssel des Nutzers wird sicher auf dem Gerät gespeichert. Die Anwendung verwendet keine Cookies oder andere Tracking-Technologien.
 
 Bitte beachte, dass durch die Nutzung der API die [OpenWeather Bedingungen](https://openweathermap.org/api) gelten.
 
 ## Haftungsausschluss
 
-Die Anwendung ist weder kommerziell noch mit einer Firma oder Organisation verbunden. Es handelt sich um ein privates Projekt, das zudem nicht über einen App Store verfügbar ist. ([Hier](https://github.com/m5lk3n/windig/blob/main/docs/FAQ.md) steht warum.) Die App wird wie gesehen und ohne jegliche Gewährleistung bereitgestellt. Der Autor übernimmt keine Verantwortung für Kosten, Schäden oder Verluste, die durch die Nutzung der Anwendung oder der OpenWeather APIs entstehen können. Mit der Nutzung der Anwendung akzeptierst du diesen Haftungsausschluss.
+Die Anwendung ist weder kommerziell noch mit einer Firma oder Organisation verbunden. Es handelt sich um ein privates Projekt, das zudem nicht über einen App Store verfügbar ist. ([Hier](https://github.com/m5lk3n/windich/blob/main/docs/FAQ.md) steht warum.) Die App wird wie gesehen und ohne jegliche Gewährleistung bereitgestellt. Der Autor übernimmt keine Verantwortung für Kosten, Schäden oder Verluste, die durch die Nutzung der Anwendung oder der OpenWeather APIs entstehen können. Mit der Nutzung der Anwendung akzeptierst du diesen Haftungsausschluss.
 
 ## Installation
 

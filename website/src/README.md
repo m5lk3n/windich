@@ -1,4 +1,4 @@
-# Windig
+# Windich
 
 *It's "windich" (windy).*
 
@@ -42,7 +42,7 @@ Disabling/Enabling device network requires an explicit "Refresh" to take effect.
 
 ## Key
 
-Windig uses OpenWeather which requires an API key. **At this point in time, using the OpenWeather API is only free of charge up until 1000 API calls per day!** (So far, when using Windig 24/7 20 refreshes per hour are within the free tier.) Please read [OpenWeather Pricing](https://openweathermap.org/price) for details.
+Windich uses OpenWeather which requires an API key. **At this point in time, using the OpenWeather API is only free of charge up until 1000 API calls per day!** (So far, when using Windich 24/7 20 refreshes per hour are within the free tier.) Please read [OpenWeather Pricing](https://openweathermap.org/price) for details.
 
 Long story short, please sign up and bring your own key. OpenWeather API keys are managed on [the account page](https://home.openweathermap.org/users/sign_in).
 
@@ -50,13 +50,13 @@ Long story short, please sign up and bring your own key. OpenWeather API keys ar
 
 ## Privacy
 
-Windig itself does not collect any personal data. The application does not store any data on a server. The user's (OpenWeather API) key is stored securely on the client device. The application itself does not use cookies or any other tracking technologies.
+Windich itself does not collect any personal data. The application does not store any data on a server. The user's (OpenWeather API) key is stored securely on the client device. The application itself does not use cookies or any other tracking technologies.
 
 Please note that, through the usage of the API, [OpenWeather Terms](https://openweathermap.org/api) apply.
 
 ## Disclaimer
 
-The application is neither commercial nor affiliated with any corporation or organization. It's a pet project which, besides, is not available through an app store. ([Here](https://github.com/m5lk3n/windig/blob/main/docs/FAQ.md) is why.) The app is provided as is and without warranty of any kind. The author is not responsible for any costs, damages or losses that may result from the use of the application or the OpenWeather APIs. By using the application, you agree to this disclaimer.
+The application is neither commercial nor affiliated with any corporation or organization. It's a pet project which, besides, is not available through an app store. ([Here](https://github.com/m5lk3n/windich/blob/main/docs/FAQ.md) is why.) The app is provided as is and without warranty of any kind. The author is not responsible for any costs, damages or losses that may result from the use of the application or the OpenWeather APIs. By using the application, you agree to this disclaimer.
 
 ## Installation
 

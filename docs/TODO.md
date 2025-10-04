@@ -1,6 +1,5 @@
 # To do
 
-- rename to "Windich"
 - repo meta data
 
 ## Open

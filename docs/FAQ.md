@@ -1,10 +1,10 @@
 # FAQ
 
 <details open>
-<summary>Why can't I get Windig from an app store?</summary>
+<summary>Why can't I get Windich from an app store?</summary>
 
 There are several reasons for this:
-- It's my second Flutter app, and it's not Enterprise-grade/Consumer-ready. My primary intention is to use Wyatt to learn (not only Flutter), and also to explore AI for development.
+- It's my second Flutter app, and it's nothing Enterprise-grade/Consumer-ready. My primary intention is to use Windich to learn (not only Flutter), and also to explore AI for development.
 - I already have a day job, and I don't consider myself a professional app developer.
 - The current version requires an OpenWeatherMap API key. Using such a key is free up until a certain limit, after that there's a [monthly cost](https://mapsplatform.google.com/pricing/) attached to it. As I don't resell API keys, you need to bring your own.
 - If I made this a commercial app and to make it into the app store, I would need to fulfill certain criteria such as:

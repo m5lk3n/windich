@@ -42,9 +42,9 @@
   "save": "Save",
   "keySaved": "Key saved.",
   "keyRemoved": "Key removed. The app won't work without a key!",
-  "keyUrl": "https://windig.lttl.dev/#/en/?id=key",
+  "keyUrl": "https://windich.lttl.dev/#/en/?id=key",
   "disclaimer": "Disclaimer",
-  "disclaimerUrl": "https://windig.lttl.dev/#/en/?id=disclaimer",
+  "disclaimerUrl": "https://windich.lttl.dev/#/en/?id=disclaimer",
   "privacyPolicy": "Privacy Policy",
-  "privacyPolicyUrl": "https://windig.lttl.dev/#/en/?id=policy"
+  "privacyPolicyUrl": "https://windich.lttl.dev/#/en/?id=policy"
 }

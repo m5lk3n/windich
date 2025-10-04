@@ -43,9 +43,9 @@
   "keySaved": "Schlüssel gespeichert.",
   "keyRemoved": "Schlüssel gelöscht. Die App funkioniert nicht ohne Schlüssel!",
 
-  "keyUrl": "https://windig.lttl.dev/#/de/?id=schlüssel",
+  "keyUrl": "https://windich.lttl.dev/#/de/?id=schlüssel",
   "disclaimer": "Haftungsausschluss",
-  "disclaimerUrl": "https://windig.lttl.dev/#/de/?id=haftungsausschluss",
+  "disclaimerUrl": "https://windich.lttl.dev/#/de/?id=haftungsausschluss",
   "privacyPolicy": "Datenschutzbestimmungen",
-  "privacyPolicyUrl": "https://windig.lttl.dev/#/de/?id=datenschutzbestimmungen"
+  "privacyPolicyUrl": "https://windich.lttl.dev/#/de/?id=datenschutzbestimmungen"
 }
