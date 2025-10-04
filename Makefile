@@ -111,7 +111,6 @@ build-website: needs-magick needs-yq
 	mkdir -p ${WEBSITE_BUILD_DIR}/_fonts
 	magick android/app/src/main/res/mipmap-hdpi/ic_launcher.png -define icon:auto-resize=256,128,96,64,48,32,24,16 ${WEBSITE_BUILD_DIR}/favicon.ico
 	cp assets/icon/icon-small.png ${WEBSITE_BUILD_DIR}
-	cp assets/logo/logo-small.png ${WEBSITE_BUILD_DIR}
 	cp device_screens/screenshots/*.png ${WEBSITE_BUILD_DIR}
 	cp -R assets/fonts/* ${WEBSITE_BUILD_DIR}/_fonts
 	rsync -av --exclude='.DS_Store' --exclude='*.template' ${WEBSITE_SRC_DIR}/* ${WEBSITE_BUILD_DIR}/

@@ -84,7 +84,9 @@ Die App muss gebaut und per Sideload installiert werden. Details dazu findest du
 
 ---
 
-[![lttl.dev](../logo-small.png)](https://lttl.dev)
+<p align="center">
+    <a href="https://lttl.dev"><img alt="Windich key entry" src="app-4-about.png" width="33%"/></a>
+</p>
 
 ---
 

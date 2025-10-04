@@ -84,7 +84,9 @@ The app needs to be built and sideloaded. Please see the source repo's [DEV](htt
 
 ---
 
-[![lttl.dev](../logo-small.png)](https://lttl.dev)
+<p align="center">
+    <a href="https://lttl.dev"><img alt="Windich key entry" src="app-4-about.png" width="33%"/></a>
+</p>
 
 ---
 
