@@ -46,6 +46,7 @@ app.*.map.json
 
 # my additions
 *.env
+*.env.bak
 .vscode/
 website/dist/
 lib/build/

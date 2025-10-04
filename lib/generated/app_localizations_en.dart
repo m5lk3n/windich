@@ -160,8 +160,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get disclaimerUrl => 'https://windich.lttl.dev/#/en/?id=disclaimer';
 
   @override
-  String get privacyPolicy => 'Privacy Policy';
+  String get privacy => 'Privacy';
 
   @override
-  String get privacyPolicyUrl => 'https://windich.lttl.dev/#/en/?id=policy';
+  String get privacyUrl => 'https://windich.lttl.dev/#/en/?id=privacy';
 }

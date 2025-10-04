@@ -356,17 +356,17 @@ abstract class AppLocalizations {
   /// **'https://windich.lttl.dev/#/en/?id=disclaimer'**
   String get disclaimerUrl;
 
-  /// No description provided for @privacyPolicy.
+  /// No description provided for @privacy.
   ///
   /// In en, this message translates to:
-  /// **'Privacy Policy'**
-  String get privacyPolicy;
+  /// **'Privacy'**
+  String get privacy;
 
-  /// No description provided for @privacyPolicyUrl.
+  /// No description provided for @privacyUrl.
   ///
   /// In en, this message translates to:
-  /// **'https://windich.lttl.dev/#/en/?id=policy'**
-  String get privacyPolicyUrl;
+  /// **'https://windich.lttl.dev/#/en/?id=privacy'**
+  String get privacyUrl;
 }
 
 class _AppLocalizationsDelegate

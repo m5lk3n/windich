@@ -7,3 +7,5 @@
 <img alt="Windich screenshot" src="app-2-light-theme.png" width="50%"/>
 
 <img alt="Windich screenshot" src="app-3-key-entry.png" width="50%"/>
+
+<img alt="Windich screenshot" src="app-4-about.png" width="50%"/>

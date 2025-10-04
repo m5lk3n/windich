@@ -45,6 +45,6 @@
   "keyUrl": "https://windich.lttl.dev/#/en/?id=key",
   "disclaimer": "Disclaimer",
   "disclaimerUrl": "https://windich.lttl.dev/#/en/?id=disclaimer",
-  "privacyPolicy": "Privacy Policy",
-  "privacyPolicyUrl": "https://windich.lttl.dev/#/en/?id=policy"
+  "privacy": "Privacy",
+  "privacyUrl": "https://windich.lttl.dev/#/en/?id=privacy"
 }

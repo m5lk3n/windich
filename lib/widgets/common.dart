@@ -56,9 +56,9 @@ Future<void> showWindichAboutDialog(BuildContext context) async {
             ),
           ),
           TextButton(
-            onPressed: () => browseTo(localizations?.privacyPolicyUrl ?? ''),
+            onPressed: () => browseTo(localizations?.privacyUrl ?? ''),
             child: Text(
-              localizations?.privacyPolicy ?? '',
+              localizations?.privacy ?? '',
               style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                 decoration: TextDecoration.underline,
                 color: Theme.of(context).colorScheme.primary,

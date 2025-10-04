@@ -153,7 +153,7 @@ class AppLocalizationsDe extends AppLocalizations {
       'Schlüssel gelöscht. Die App funkioniert nicht ohne Schlüssel!';
 
   @override
-  String get keyUrl => 'https://windich.lttl.dev/#/de/?id=schlüssel';
+  String get keyUrl => 'https://windich.lttl.dev/#/de/?id=schl%c3%bcssel';
 
   @override
   String get disclaimer => 'Haftungsausschluss';
@@ -163,9 +163,8 @@ class AppLocalizationsDe extends AppLocalizations {
       'https://windich.lttl.dev/#/de/?id=haftungsausschluss';
 
   @override
-  String get privacyPolicy => 'Datenschutzbestimmungen';
+  String get privacy => 'Datenschutz';
 
   @override
-  String get privacyPolicyUrl =>
-      'https://windich.lttl.dev/#/de/?id=datenschutzbestimmungen';
+  String get privacyUrl => 'https://windich.lttl.dev/#/de/?id=datenschutz';
 }
