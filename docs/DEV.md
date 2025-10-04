@@ -4,11 +4,15 @@
 
 - Flutter 3.35.5 (at the time of writing)
 
+- Tested on the following physical devices:
+    - Pixel 6 on latest Android 16
+    - Motorola G86 Power 5G on latest Android 15 
+
 ## Prerequisites
 
 - Obtain a key for https://openweathermap.org/api.
-- Configure a subdomain for the website (author).
-- Get a directory on the webserver (author).
+- Configure a subdomain for the website (Windich author only).
+- Get a directory on the webserver (Windich author only).
 - Run `make init` and fill in the missing values.
 
 ## Start

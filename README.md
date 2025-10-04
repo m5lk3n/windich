@@ -2,7 +2,7 @@
 
 ![](assets/icon/icon-small.png)
 
-Your companion for outdoor activities, providing forecasted and real-time weather information like wind speed and wind direction using your device's sensors and geolocation. An app for Android and one of my pet projects. For now.
+Your very little companion for outdoor activities, providing forecasted and real-time weather information like wind speed and wind direction using your device's sensors and geolocation. An app for Android and one of my pet projects. For now.
 
 Screenshots can be found [here](device_screens/screenshots/APP.md).
 
@@ -16,12 +16,12 @@ Screenshots can be found [here](device_screens/screenshots/APP.md).
 
 ## Objectives
 
-- Have a compass and a wind compass at hand; know where to go when the GPS says "head southeast" when no sun is up.
+- Have a compass and a wind compass at hand; know where to go when the GPS says "head southeast" (when no sun is up ;-))
 - Learn Flutter/Dart further.
 - Learn Flutter/Dart i18n.
 - Explore Copilot and ChatGPT for Flutter app development.
 - Try [docsify](https://docsify.js.org/).
-- Time-boxed activity to max. 6 weeks outside of work.
+- Time-box activity to max. 6 weeks outside of work.
 
 ## Repo Structure
 
@@ -39,7 +39,7 @@ Screenshots can be found [here](device_screens/screenshots/APP.md).
 
 Here's [why](docs/FAQ.md) Windich is not available from an app store.
 
-So, start [here](docs/DEV.md#prerequisites). Please visit the [website](https://windich.lttl.dev) for more info.
+Start [here](docs/DEV.md#prerequisites) and please visit the [website](https://windich.lttl.dev) for more info.
 
 ## License
 
