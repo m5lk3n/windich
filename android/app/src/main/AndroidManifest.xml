@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="Windig"
+        android:label="Windich"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <!-- enableOnBackInvokedCallback="false" = avoids the repeated registrations causing endless `WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped)` eventually crashing the app -->

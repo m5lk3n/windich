@@ -1,4 +1,4 @@
-package dev.lttl.windig
+package dev.lttl.windich
 
 import io.flutter.embedding.android.FlutterActivity
 

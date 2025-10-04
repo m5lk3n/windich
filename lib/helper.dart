@@ -1,5 +1,5 @@
 import 'package:url_launcher/url_launcher.dart';
-import 'package:windig/log.dart';
+import 'package:windich/log.dart';
 
 Future<void> browseTo(String url) async {
   if (url.isEmpty) {

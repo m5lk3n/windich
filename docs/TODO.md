@@ -1,5 +1,6 @@
 # To do
 
+- add lib/build to .gitignore
 - repo meta data
 
 ## Open

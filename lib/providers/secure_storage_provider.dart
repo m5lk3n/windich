@@ -1,9 +1,9 @@
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:windig/common.dart';
-import 'package:windig/extensions/string.dart';
-import 'package:windig/log.dart';
-import 'package:windig/services/secure_storage.dart';
+import 'package:windich/common.dart';
+import 'package:windich/extensions/string.dart';
+import 'package:windich/log.dart';
+import 'package:windich/services/secure_storage.dart';
 
 abstract class _SecureStorageKeys {
   static String prefix = Common.packageName;

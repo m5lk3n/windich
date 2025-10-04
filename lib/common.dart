@@ -25,5 +25,5 @@ abstract class Style {
 
 abstract class Url {
   static const String dev = 'https://lttl.dev';
-  static const String web = 'https://windig.lttl.dev/';
+  static const String web = 'https://windich.lttl.dev/';
 }

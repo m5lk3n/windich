@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:windig/extensions/string.dart';
-import 'package:windig/generated/app_localizations.dart';
-import 'package:windig/helper.dart';
-import 'package:windig/log.dart';
-import 'package:windig/providers/secure_storage_provider.dart';
+import 'package:windich/extensions/string.dart';
+import 'package:windich/generated/app_localizations.dart';
+import 'package:windich/helper.dart';
+import 'package:windich/log.dart';
+import 'package:windich/providers/secure_storage_provider.dart';
 
 Future<void> showKeyInputDialog(BuildContext context, WidgetRef ref) async {
   final localizations = AppLocalizations.of(context);

@@ -341,7 +341,7 @@ abstract class AppLocalizations {
   /// No description provided for @keyUrl.
   ///
   /// In en, this message translates to:
-  /// **'https://windig.lttl.dev/#/en/?id=key'**
+  /// **'https://windich.lttl.dev/#/en/?id=key'**
   String get keyUrl;
 
   /// No description provided for @disclaimer.
@@ -353,7 +353,7 @@ abstract class AppLocalizations {
   /// No description provided for @disclaimerUrl.
   ///
   /// In en, this message translates to:
-  /// **'https://windig.lttl.dev/#/en/?id=disclaimer'**
+  /// **'https://windich.lttl.dev/#/en/?id=disclaimer'**
   String get disclaimerUrl;
 
   /// No description provided for @privacyPolicy.
@@ -365,7 +365,7 @@ abstract class AppLocalizations {
   /// No description provided for @privacyPolicyUrl.
   ///
   /// In en, this message translates to:
-  /// **'https://windig.lttl.dev/#/en/?id=policy'**
+  /// **'https://windich.lttl.dev/#/en/?id=policy'**
   String get privacyPolicyUrl;
 }
 

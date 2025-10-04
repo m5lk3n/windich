@@ -151,17 +151,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get keyRemoved => 'Key removed. The app won\'t work without a key!';
 
   @override
-  String get keyUrl => 'https://windig.lttl.dev/#/en/?id=key';
+  String get keyUrl => 'https://windich.lttl.dev/#/en/?id=key';
 
   @override
   String get disclaimer => 'Disclaimer';
 
   @override
-  String get disclaimerUrl => 'https://windig.lttl.dev/#/en/?id=disclaimer';
+  String get disclaimerUrl => 'https://windich.lttl.dev/#/en/?id=disclaimer';
 
   @override
   String get privacyPolicy => 'Privacy Policy';
 
   @override
-  String get privacyPolicyUrl => 'https://windig.lttl.dev/#/en/?id=policy';
+  String get privacyPolicyUrl => 'https://windich.lttl.dev/#/en/?id=policy';
 }

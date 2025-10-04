@@ -6,11 +6,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
-import 'package:windig/common.dart';
-import 'package:windig/extensions/string.dart';
-import 'package:windig/generated/app_localizations.dart';
-import 'package:windig/log.dart';
-import 'package:windig/screens/weather_info.dart';
+import 'package:windich/common.dart';
+import 'package:windich/extensions/string.dart';
+import 'package:windich/generated/app_localizations.dart';
+import 'package:windich/log.dart';
+import 'package:windich/screens/weather_info.dart';
 
 Future<void> initApp() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,14 +36,14 @@ Future<void> main() async {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]).then((_) {
-    runApp(ProviderScope(child: WindigApp(savedThemeMode: savedThemeMode)));
+    runApp(ProviderScope(child: WindichApp(savedThemeMode: savedThemeMode)));
   });
 }
 
-class WindigApp extends StatelessWidget {
+class WindichApp extends StatelessWidget {
   final AdaptiveThemeMode? savedThemeMode;
 
-  const WindigApp({super.key, this.savedThemeMode});
+  const WindichApp({super.key, this.savedThemeMode});
 
   @override
   Widget build(BuildContext context) {

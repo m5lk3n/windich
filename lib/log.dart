@@ -7,8 +7,8 @@ import 'package:path_provider/path_provider.dart';
 
 // https://stackoverflow.com/questions/75859813/retrieve-logs-from-customer-device-in-flutter
 
-const String logFilePrefix = 'windig-log';
-const String appName = 'WindigApp';
+const String logFilePrefix = 'windich-log';
+const String appName = 'WindichApp';
 final log = Logger(appName);
 
 extension LogExtensions on Logger {
@@ -49,9 +49,9 @@ Future<void> initLogging() async {
 
 Future<String> get _localPath async {
   final directory =
-      // getTemporaryDirectory() // /data/user/0/dev.lttl.windig/cache - nothing found here
-      // getApplicationDocumentsDirectory() // /data/user/0/dev.lttl.windig/app_flutter - nothing found here
-      await getExternalStorageDirectory(); // /storage/emulated/0/Android/data/dev.lttl.windig/files
+      // getTemporaryDirectory() // /data/user/0/dev.lttl.windich/cache - nothing found here
+      // getApplicationDocumentsDirectory() // /data/user/0/dev.lttl.windich/app_flutter - nothing found here
+      await getExternalStorageDirectory(); // /storage/emulated/0/Android/data/dev.lttl.windich/files
 
   return directory!.path;
 }

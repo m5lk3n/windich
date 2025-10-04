@@ -10,15 +10,15 @@ import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
 
-import 'package:windig/common.dart';
-import 'package:windig/generated/app_localizations.dart';
-import 'package:windig/helper.dart';
-import 'package:windig/log.dart';
-import 'package:windig/models/common.dart';
-import 'package:windig/providers/secure_storage_provider.dart';
-import 'package:windig/widgets/common.dart';
-import 'package:windig/widgets/input_key.dart';
-import 'package:windig/widgets/wind_compass.dart';
+import 'package:windich/common.dart';
+import 'package:windich/generated/app_localizations.dart';
+import 'package:windich/helper.dart';
+import 'package:windich/log.dart';
+import 'package:windich/models/common.dart';
+import 'package:windich/providers/secure_storage_provider.dart';
+import 'package:windich/widgets/common.dart';
+import 'package:windich/widgets/input_key.dart';
+import 'package:windich/widgets/wind_compass.dart';
 
 class WeatherInfoScreen extends ConsumerStatefulWidget {
   const WeatherInfoScreen({super.key});
@@ -276,7 +276,7 @@ class _WeatherInfoScreenState extends ConsumerState<WeatherInfoScreen> {
           child: Icon(Icons.info),
           label: localizations?.about ?? '',
           labelStyle: TextStyle(fontSize: 18.0),
-          onTap: () => showWindigAboutDialog(context),
+          onTap: () => showWindichAboutDialog(context),
         ),
         SpeedDialChild(
           child: Icon(Icons.key),

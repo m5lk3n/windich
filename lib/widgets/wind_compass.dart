@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:windig/models/common.dart';
+import 'package:windich/models/common.dart';
 
 // CustomPainter to draw a wind direction indicator
 class WindCompassPainter extends CustomPainter {

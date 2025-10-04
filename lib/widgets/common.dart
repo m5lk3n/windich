@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:windig/common.dart';
-import 'package:windig/generated/app_localizations.dart';
-import 'package:windig/helper.dart';
+import 'package:windich/common.dart';
+import 'package:windich/generated/app_localizations.dart';
+import 'package:windich/helper.dart';
 
 String _getLegalese() {
   final int currentYear = DateTime.now().year;
@@ -24,7 +24,7 @@ class AppIconSmall extends StatelessWidget {
   }
 }
 
-Future<void> showWindigAboutDialog(BuildContext context) async {
+Future<void> showWindichAboutDialog(BuildContext context) async {
   final localizations = AppLocalizations.of(context);
 
   final aboutDialog = AboutDialog(
