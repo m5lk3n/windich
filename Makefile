@@ -131,8 +131,8 @@ serve-website: needs-python build-website
 .PHONY: deploy-website
 deploy-website: build-website
 	@echo "Deploying website online ..."
-	@export $$(cat .env | xargs) && scp -r ${WEBSITE_BUILD_DIR}/* $${WEBSITE_DEPLOY_TARGET}
-	@echo "... deployed."
+	@export $$(cat .env | xargs) && rsync -avz --delete ${WEBSITE_BUILD_DIR}/ $${WEBSITE_DEPLOY_TARGET}
+	@echo "... deployed. Make sure to check target permissions."
 
 ## strip-exif: remove all EXIF metadata from images in this repo
 .PHONY: strip-exif
