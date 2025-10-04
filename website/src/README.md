@@ -60,7 +60,7 @@ The application is neither commercial nor affiliated with any corporation or org
 
 ## Installation
 
-The app needs to be built and sideloaded. Please see the source repo's [DEV](https://github.com/m5lk3n/windig/blob/main/docs/DEV.md) section for details.
+The app needs to be built and sideloaded. Please see the source repo's [DEV](https://github.com/m5lk3n/windich/blob/main/docs/DEV.md#installation) section for details.
 
 ---
 

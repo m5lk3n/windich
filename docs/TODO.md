@@ -1,9 +1,7 @@
 # To do
 
 - rename to "Windich"
-- [DEV](DEV.md), describe installation
-- [README](../README.md)
-- repo incl. license
+- repo meta data
 
 ## Open
 

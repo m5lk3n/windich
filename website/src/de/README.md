@@ -60,7 +60,7 @@ Die Anwendung ist weder kommerziell noch mit einer Firma oder Organisation verbu
 
 ## Installation
 
-Die App muss gebaut und per Sideload installiert werden. Details dazu findest du im [DEV](https://github.com/m5lk3n/windig/blob/main/docs/DEV.md)-Abschnitt des Quellcode-Repos.
+Die App muss gebaut und per Sideload installiert werden. Details dazu findest du im [DEV](https://github.com/m5lk3n/windich/blob/main/docs/DEV.md#installation)-Abschnitt des Quellcode-Repos.
 
 ---
 

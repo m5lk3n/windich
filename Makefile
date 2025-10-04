@@ -37,6 +37,12 @@ needs-yq:
 		echo "yq is required but it's not installed. Aborting."; \
 		exit 1; \
 	fi
+## init: create .env file with placeholder for OpenWeatherMap API key
+.PHONY: init
+init:
+	echo "OPEN_WEATHER_MAP_API_KEY=" >> .env
+	echo "WEBSITE_DEPLOY_TARGET=" >> .env
+	@echo "Please edit .env and add your OpenWeatherMap API key."
 
 ## install: add all required dependencies
 .PHONY: install
@@ -85,6 +91,7 @@ build-android-debug: clean
 .PHONY: all-android
 all-android: clean update upgrade
 	mv .env .env.bak || true
+	make init
 	@echo "Building APK in release mode ..."
 	flutter pub get
 	flutter build apk --release # --obfuscate --split-debug-info=build/app/outputs/flutter-apk/app-armeabi-v7a-release-obfuscation ?
