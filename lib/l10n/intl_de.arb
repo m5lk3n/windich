@@ -3,7 +3,7 @@
 
   "loading": "Laden...",
   "na": "nicht verfügbar",
-  "noKey": "Ein Schlüssel wird benötigt, damit die App funktioniert. Bitte wähle \"Schlüssel\" im Menü.",
+  "noKey": "Ein gültiger Schlüssel wird benötigt, damit die App funktioniert. Bitte wähle \"Schlüssel\" im Menü.",
   "currentWindSpeed": "Aktuelle Windgeschwindigkeit: {currentWindSpeed}",
   "forecastWindSpeed": "3h Windgeschwindigkeit: {forecastWindSpeed}",
   "currentWindDirection": "Aktuelle Windrichtung: {currentWindDirection}",
@@ -41,7 +41,7 @@
   "cancel": "Abbrechen",
   "save": "Speichern",
   "keySaved": "Schlüssel gespeichert.",
-  "keyRemoved": "Schlüssel gelöscht. Die App funkioniert nicht ohne Schlüssel!",
+  "keyRemoved": "Schlüssel gelöscht. Die App funkioniert nicht ohne gültigen Schlüssel!",
 
   "keyUrl": "https://windich.lttl.dev/#/de/?id=schl%c3%bcssel",
   "disclaimer": "Haftungsausschluss",

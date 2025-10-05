@@ -5,12 +5,14 @@ import 'dart:math' as math;
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_compass/flutter_compass.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:windich/common.dart';
+import 'package:windich/extensions/string.dart';
 import 'package:windich/generated/app_localizations.dart';
 import 'package:windich/helper.dart';
 import 'package:windich/log.dart';
@@ -51,12 +53,15 @@ class _WeatherInfoScreenState extends ConsumerState<WeatherInfoScreen> {
   double? compassHeading;
   String? lastUpdated;
   Direction direction = Direction.N;
+  Timer? _checkOwmKeyTimer;
 
   StreamSubscription<CompassEvent>? _compassSubscription;
 
   @override
   void initState() {
     super.initState();
+
+    ref.read(secureStorageProvider.notifier).loadKey();
 
     _compassSubscription = FlutterCompass.events?.listen((event) {
       if (mounted) {
@@ -65,11 +70,14 @@ class _WeatherInfoScreenState extends ConsumerState<WeatherInfoScreen> {
         });
       }
     });
+
+    startOwmKeyCheckTimer();
   }
 
   @override
   void dispose() {
     _compassSubscription?.cancel();
+    _checkOwmKeyTimer?.cancel();
     super.dispose();
   }
 
@@ -335,20 +343,23 @@ class _WeatherInfoScreenState extends ConsumerState<WeatherInfoScreen> {
     if (owmKey != key && key.isNotEmpty) {
       owmKey = key;
       updateWeatherInfo(context);
-    } else if (!noKeyNotified && key.isEmpty) {
-      noKeyNotified = true;
+    } else if (key.isEmpty) {
       owmKey = '';
-      setNotAvailableState();
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        final ScaffoldMessengerState scaffold = ScaffoldMessenger.of(context);
-        scaffold.showSnackBar(
-          SnackBar(
-            content: Text(localizations?.noKey ?? ''),
-            backgroundColor: Theme.of(context).colorScheme.error,
-            behavior: SnackBarBehavior.floating,
-          ),
+      if (!noKeyNotified) {
+        noKeyNotified = true;
+        setNotAvailableState();
+
+        owmKey = dotenv.env['OPEN_WEATHER_MAP_API_KEY']?.trim() ?? '';
+        log.debug(
+          'OpenWeatherMap API key from environment one-time fallback): ${owmKey?.scramble()}',
+          name: '$runtimeType',
         );
-      });
+
+        if (owmKey!.isNotEmpty) {
+          ref.read(secureStorageProvider.notifier).setKey(owmKey!);
+          updateWeatherInfo(context);
+        }
+      }
     }
 
     return Scaffold(
@@ -450,5 +461,33 @@ class _WeatherInfoScreenState extends ConsumerState<WeatherInfoScreen> {
       ),
       floatingActionButton: getFloatingButtons(context, ref),
     );
+  }
+
+  void checkOwmKey() {
+    log.debug(
+      'checking OpenWeatherMap API key ($owmKey) ...',
+      name: '$runtimeType',
+    );
+    if (owmKey != null && owmKey!.isNotEmpty) return;
+    final localizations = AppLocalizations.of(context);
+    final ScaffoldMessengerState scaffold = ScaffoldMessenger.of(context);
+    scaffold.showSnackBar(
+      SnackBar(
+        content: Text(localizations?.noKey ?? ''),
+        backgroundColor: Theme.of(context).colorScheme.error,
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
+
+  void startOwmKeyCheckTimer() {
+    Future.delayed(const Duration(seconds: 10), () {
+      // initial delay
+      checkOwmKey();
+      _checkOwmKeyTimer?.cancel();
+      _checkOwmKeyTimer = Timer.periodic(const Duration(minutes: 1), (timer) {
+        checkOwmKey();
+      });
+    });
   }
 }

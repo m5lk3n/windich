@@ -3,7 +3,7 @@
 
   "loading": "Loading...",
   "na": "n/a",
-  "noKey": "A key is needed for the app to work. Please choose \"Key\" from the menu.",
+  "noKey": "A valid key is needed for the app to work. Please choose \"Key\" from the menu.",
   "currentWindSpeed": "Current Wind Speed: {currentWindSpeed}",
   "forecastWindSpeed": "3h Wind Speed: {forecastWindSpeed}",
   "currentWindDirection": "Current Wind Direction: {currentWindDirection}",
@@ -41,7 +41,7 @@
   "cancel": "Cancel",
   "save": "Save",
   "keySaved": "Key saved.",
-  "keyRemoved": "Key removed. The app won't work without a key!",
+  "keyRemoved": "Key removed. The app won't work without a valid key!",
   "keyUrl": "https://windich.lttl.dev/#/en/?id=key",
   "disclaimer": "Disclaimer",
   "disclaimerUrl": "https://windich.lttl.dev/#/en/?id=disclaimer",

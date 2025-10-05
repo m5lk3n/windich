@@ -119,7 +119,7 @@ abstract class AppLocalizations {
   /// No description provided for @noKey.
   ///
   /// In en, this message translates to:
-  /// **'A key is needed for the app to work. Please choose \"Key\" from the menu.'**
+  /// **'A valid key is needed for the app to work. Please choose \"Key\" from the menu.'**
   String get noKey;
 
   /// No description provided for @currentWindSpeed.
@@ -335,7 +335,7 @@ abstract class AppLocalizations {
   /// No description provided for @keyRemoved.
   ///
   /// In en, this message translates to:
-  /// **'Key removed. The app won\'t work without a key!'**
+  /// **'Key removed. The app won\'t work without a valid key!'**
   String get keyRemoved;
 
   /// No description provided for @keyUrl.

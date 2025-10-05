@@ -19,7 +19,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get noKey =>
-      'Ein Schlüssel wird benötigt, damit die App funktioniert. Bitte wähle \"Schlüssel\" im Menü.';
+      'Ein gültiger Schlüssel wird benötigt, damit die App funktioniert. Bitte wähle \"Schlüssel\" im Menü.';
 
   @override
   String currentWindSpeed(Object currentWindSpeed) {
@@ -150,7 +150,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get keyRemoved =>
-      'Schlüssel gelöscht. Die App funkioniert nicht ohne Schlüssel!';
+      'Schlüssel gelöscht. Die App funkioniert nicht ohne gültigen Schlüssel!';
 
   @override
   String get keyUrl => 'https://windich.lttl.dev/#/de/?id=schl%c3%bcssel';

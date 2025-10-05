@@ -1,8 +1,5 @@
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:windich/common.dart';
-import 'package:windich/extensions/string.dart';
-import 'package:windich/log.dart';
 import 'package:windich/services/secure_storage.dart';
 
 abstract class _SecureStorageKeys {
@@ -15,16 +12,7 @@ class SecureStorageNotifier extends Notifier<String> {
 
   @override
   String build() {
-    var owmKey = dotenv.env['OPEN_WEATHER_MAP_API_KEY']?.trim() ?? '';
-    log.debug(
-      'using OpenWeatherMap API key: ${owmKey.scramble()}',
-      name: '$runtimeType',
-    );
-    if (owmKey.isNotEmpty) {
-      setKey(owmKey);
-    }
-
-    return owmKey;
+    return '';
   }
 
   Future<void> loadKey() async {

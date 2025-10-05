@@ -1,10 +1,10 @@
 name: windich
-description: "Your little companion app for outdoor activities, providing real-time weather info for your location."
+description: "Your very little companion app for outdoor activities."
 homepage: https://windich.lttl.dev
 repository: https://github.com/m5lk3n/windich
 publish_to: 'none'
 
-version: 0.1.0+7
+version: 0.1.0+8
 
 environment:
   sdk: ^3.9.0

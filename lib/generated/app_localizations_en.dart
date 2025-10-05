@@ -19,7 +19,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get noKey =>
-      'A key is needed for the app to work. Please choose \"Key\" from the menu.';
+      'A valid key is needed for the app to work. Please choose \"Key\" from the menu.';
 
   @override
   String currentWindSpeed(Object currentWindSpeed) {
@@ -148,7 +148,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get keySaved => 'Key saved.';
 
   @override
-  String get keyRemoved => 'Key removed. The app won\'t work without a key!';
+  String get keyRemoved =>
+      'Key removed. The app won\'t work without a valid key!';
 
   @override
   String get keyUrl => 'https://windich.lttl.dev/#/en/?id=key';

@@ -2,7 +2,7 @@
 
 ![](assets/icon/icon-small.png)
 
-Your very little companion for outdoor activities, providing forecasted and real-time weather information like wind speed and wind direction using your device's sensors and geolocation. An app for Android and one of my pet projects. For now.
+Your very little companion for your location, your outdoor activities, providing forecasted and real-time weather information like wind speed and wind direction using your device's sensors and geolocation. An app for Android and one of my pet projects. For now.
 
 Screenshots can be found [here](device_screens/screenshots/APP.md).
 
@@ -14,11 +14,17 @@ Screenshots can be found [here](device_screens/screenshots/APP.md).
 - [How-to](docs/HOWTO.md)
 - [To-do](docs/TODO.md)
 
+## Known Limitations / Known Issues
+
+- After entering a key, it may take a manual "Refresh" for the UI to update properly.
+- The compasses require constant redraw which probably increases CPU load and drains the device battery fast.
+
 ## Objectives
 
 - Have a compass and a wind compass at hand; know where to go when the GPS says "head southeast" (when no sun is up ;-))
 - Learn Flutter/Dart further.
 - Learn Flutter/Dart i18n.
+- Try Riverpod 3.
 - Explore Copilot and ChatGPT for Flutter app development.
 - Try [docsify](https://docsify.js.org/).
 - Time-box activity to max. 6 weeks outside of work.
