@@ -78,6 +78,10 @@ Bitte beachte, dass durch die Nutzung der API die [OpenWeather Bedingungen](http
 
 Die Anwendung ist weder kommerziell noch mit einer Firma oder Organisation verbunden. Es handelt sich um ein privates Projekt, das zudem nicht über einen App Store verfügbar ist. ([Hier](https://github.com/m5lk3n/windich/blob/main/docs/FAQ.md) steht warum.) Die App wird wie gesehen und ohne jegliche Gewährleistung bereitgestellt. Der Autor übernimmt keine Verantwortung für Kosten, Schäden oder Verluste, die durch die Nutzung der Anwendung oder der OpenWeather APIs entstehen können. Mit der Nutzung der Anwendung akzeptierst du diesen Haftungsausschluss.
 
+Bitte beachte ausserdem, dass diese Website Links zu externen Websites enthält. Der Autor hat keinen Einfluss auf die Inhalte dieser Websites und übernimmt keine Verantwortung oder Haftung für die dort bereitgestellten Informationen, Produkte oder Dienstleistungen.
+
+Siehe auch [hier](https://github.com/m5lk3n/windich?tab=readme-ov-file#disclaimer).
+
 ## Installation
 
 Die App muss gebaut und per Sideload installiert werden. Details dazu findest du im [DEV](https://github.com/m5lk3n/windich/blob/main/docs/DEV.md#installation)-Abschnitt des Quellcode-Repos.

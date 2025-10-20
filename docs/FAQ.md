@@ -13,6 +13,7 @@ There are several reasons for this:
   - I would need to register as a legal entity.
   - I would be forced to push out security fixes for which I may not have the time and/or bandwidth.
   - I would need to ask for professional legal advice (which isn't free either).
+  - There's more [here in the comments (in German)](https://forum.golem.de/kommentare/sonstiges/navigations-app-fuer-nahverkehr-google-schmeisst-oeffi-aus-dem-play-store/die-tristesse-der-app-stores/181784,7107118,7107873,read.html).
   - ...
 
 </details>

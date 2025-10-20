@@ -78,6 +78,10 @@ Please note that, through the usage of the API, [OpenWeather Terms](https://open
 
 The application is neither commercial nor affiliated with any corporation or organization. It's a pet project which, besides, is not available through an app store. ([Here](https://github.com/m5lk3n/windich/blob/main/docs/FAQ.md) is why.) The app is provided as is and without warranty of any kind. The author is not responsible for any costs, damages or losses that may result from the use of the application or the OpenWeather APIs. By using the application, you agree to this disclaimer.
 
+Please also note that this website includes links to external sites. The author does not control, endorse, or assume responsibility for the information, products, or services offered by third-party websites.
+
+See also [here](https://github.com/m5lk3n/windich?tab=readme-ov-file#disclaimer).
+
 ## Installation
 
 The app needs to be built and sideloaded. Please see the source repo's [DEV](https://github.com/m5lk3n/windich/blob/main/docs/DEV.md#installation) section for details.

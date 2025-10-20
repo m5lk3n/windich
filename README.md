@@ -63,6 +63,8 @@ I used
 - Copilot/GPT-4.1 to help me code and translate.
 - ChatGPT to create the icon.
 
+See more [here](https://windich.lttl.dev/#/?id=disclaimer).
+
 ---
 
 <p align="center">
