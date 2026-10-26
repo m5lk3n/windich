@@ -1,6 +1,6 @@
 # Windich
 
-![](assets/icon/icon-small.png)
+![Logo](assets/icon/icon-small.png)
 
 Your very little companion for your location, your outdoor activities, providing forecasted and real-time weather information like wind speed and wind direction using your device's sensors and geolocation. An app for Android and one of my pet projects. For now.
 
@@ -13,6 +13,7 @@ Screenshots can be found [here](device_screens/screenshots/APP.md).
 - [FAQ](docs/FAQ.md)
 - [How-to](docs/HOWTO.md)
 - [To-do](docs/TODO.md)
+- [windich.lttl.dev as PDF](docs/windich.lttl.dev.pdf)
 
 ## Known Limitations / Known Issues
 
@@ -45,7 +46,7 @@ Screenshots can be found [here](device_screens/screenshots/APP.md).
 
 Here's [why](docs/FAQ.md) Windich is not available from an app store.
 
-Start [here](docs/DEV.md#prerequisites) and please visit the [website](https://windich.lttl.dev) for more info.
+Start [here](docs/DEV.md#prerequisites) ~~and please visit the [website](https://windich.lttl.dev) for more info~~.
 
 ## License
 
@@ -53,20 +54,22 @@ This project is licensed under the GNU General Public License v3.0 (GPL-3.0) or 
 
 ## Acknowledgements
 
-- All third party dependency devs (see [pubspec.yaml](pubspec.yaml) for dependencies) 
+- All third party dependency devs (see [pubspec.yaml](pubspec.yaml) for dependencies)
 - Google Fonts/Andrew Paglinawan for [Quicksand](https://fonts.google.com/specimen/Quicksand)
 - [zeshuaro](https://github.com/zeshuaro) for [Appainter](https://appainter.dev/)
 
 ## Disclaimer
 
 I used
+
 - Copilot/GPT-4.1 to help me code and translate.
 - ChatGPT to create the icon.
 
-See more [here](https://windich.lttl.dev/#/?id=disclaimer).
+See more under this Disclaimer [here](docs/windich.lttl.dev.pdf).
 
 ---
 
+<!-- markdownlint-disable MD033 -->
 <p align="center">
     <a href="https://lttl.dev/"><img alt="lttl.dev logo" src="assets/logo/logo.png" width="33%"/></a>
 </p>
